@@ -3,6 +3,16 @@ MODULE PHO_VARS      ! Make variables global
         IMPLICIT NONE
         
         
+        !!!!! ADDED FOR Q INVERSION
+        
+        INTEGER, PARAMETER    ::    nump = 4000
+        REAL(8)                     dist_Q(nump), time_Q(nump), rayp_Q(nump)
+        REAL(8)                     minray, maxray
+        
+        
+        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        
+        
         
         INTEGER, PARAMETER :: nlay0=4000  !if change this, also change in REF_TRAN_PROB
                 
